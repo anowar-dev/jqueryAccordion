@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.accordion_container{
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+}
+.acTitle{
+    background: goldenrod;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+.heading{
+    font-size: 25px;
+    color: white;
+    width: fit-content;
+    border-bottom: 3px solid rebeccapurple;
+    margin: auto;
+}
+.acBody{
+    background: rebeccapurple;
+}
+.contentH{
+    border-bottom: 3px solid #ddd;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    color: aqua;
+}
+.contentH::after{
+    content: '\002B';
+    font-size: 30px;
+}
+.active::after{
+    content: '\002D';
+    font-size: 30px;
+}
+
+.contentP{
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    background: brown;
+    padding: 15px;
+    display: none;
+    text-align: justify;
+}
